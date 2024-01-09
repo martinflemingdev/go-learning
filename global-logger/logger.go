@@ -16,3 +16,15 @@ func init() {
     // The flags are combined using the bitwise OR operator '|'
     Logger = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
 }
+
+// To now use in other packges:
+
+// package otherpackage
+
+// import (
+//     "yourproject/logger"
+// )
+
+// func SomeFunction() {
+//     logger.Logger.Println("Logging from SomeFunction")
+// }
